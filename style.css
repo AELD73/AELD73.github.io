@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Century Gothic;
+}
+.logo img{
+    width: 8%;
+    text-align: center;
+    align-items: center;
+}
+.logo p{
+    font-size: 15px;
+        
+        
+}
+.bars{
+    display: none;
+}
+header{
+    width: 100%;
+    height: 85px;
+    background-color: #87a5ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+        
+    padding: 0px 30px;
+    position: fixed; /* Añadimos posición fija */
+    top: 0; /* Anclamos en la parte superior */
+    z-index: 999; /* Aseguramos que esté por encima de otros elementos */
+
+}
+
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #FFFF;
+    font-size: 18px;
+    padding: 10px 25px;
+        
+        
+    margin: 0 5px;
+        
+}
+
+.nav-bar ul li a:hover{
+
+    color: #000;
+    border-bottom: 4px solid #ff0000;
+}
+
+
+
+@media(max-width:900px){
+    header{
+        padding: 0px 30px;
+    }
+    .logo img{
+        width: 10%;
+    }
+    .logo p{
+        font-size: 15px;
+    }
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+
+    .bars .line{
+        width: 30px;
+        height: 3px;
+        background-color: #FFF;
+        margin: 6px 0px;
+
+    }
+
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #87a5ff;
+        transition: 0.5s;
+        overflow: hidden;
+
+    }
+
+        
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 20px;
+    }
+}
+
+
+    
+.gift {
+    
+    
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+
+@media only screen and (min-width:400px) and (max-width:900px){
+	.gift{
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/*Cards*/
+
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+/*Inicio CARD*/
+
+.cartas{
+    display: flex;
+    background-color: rgba(0, 75, 122, 0.1) ;
+    width: 100%;
+    
+}
+
+.container-card{
+	width: 40%;
+    flex-direction: column;
+	max-width: 50%;
+    background-color:none;
+	margin: 100px 300px 100px 0;
+    
+    background-color: none;
+}
+.container-card2{
+    width: 100%;
+	margin: auto  ;
+}
+.card{
+	width: 100%;
+    
+	overflow: hidden;
+	margin: auto;
+	
+	background:none;
+	
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+
+
+.card2{
+    width: 50%;
+	margin: 100px 50px 200px auto;
+	
+	background-color: none;
+	transition: all 400ms ease-out;
+	cursor: default;
+    
+}
+
+.cartas .separador-vertical{
+    
+    height: 1000px;
+    width: 2px;
+    background-color: #ff0000;
+    margin: 100px 30px ;
+    
+}
+.separador-horizontal{
+    width: 400px;
+    height: 1px;
+    margin: 25px;
+    background-color: #ff0000;
+}
+.card img{
+	width: 100%;
+	height: auto;
+}
+.card2 img{
+    width: 100%;
+	height: auto;
+}
+
+.card .contenido-card{
+	padding: 0%;
+	text-align: center;
+}
+
+.card2 .contenido-card2{
+    padding: 5%;
+	text-align: center;
+
+}
+.card .contenido-card h3{
+	margin-bottom: 0px;
+	color: #7a7a7a;
+    
+}
+.card2 .contenido-card2 h3{
+    margin-bottom: 15px;
+	color: #7a7a7a;
+}
+
+
+.card .contenido-card p{
+	display: inline-block;
+    padding: 5%;
+	margin-top: 5px;
+	text-align:left;
+	text-decoration: none;
+	color: black;
+	border: 1px solid #c58b93;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 15px;
+
+}
+
+.card2 .contenido-card2 p{
+    display: inline-block;
+	padding: 10%;
+	margin-top: 10px;
+	text-align:left;
+	color: black;
+	border: 1px solid #c58b93;
+	border-radius: 4px;
+	
+	
+}
+
+.card2 .contenido-card2 li{
+    list-style-type: disc;
+}
+
+
+/*FIn CARD*/
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+/*Fin-Cards*/
+
+/*slider*/
+.slider {
+    position: relative;
+    width: 60%; /* Ajusta según sea necesario */
+    height: 30%; /* Ajusta según sea necesario */
+    margin: auto;
+    
+}
+
+.slider h1{
+    text-align: center;
+}
+
+.slider-inner {
+    position: relative; /* Establece posición relativa para que el texto pueda ser posicionado absolutamente */
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* Ajusta según sea necesario */
+    height: auto; /* Ajusta según sea necesario */
+    border-radius: 20px;
+}
+
+.slide {
+    position: relative;
+    width: 100%; /* Ajusta según sea necesario */
+    height: auto; /* Ajusta según sea necesario */
+
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+    padding: 10px; /* Espaciado alrededor del texto */
+    font-size: 24px;
+    text-align: justify;
+    border-radius: 20px;
+}
+.text p{
+    font-size: 30px;
+    
+}
+
+
+
+/*Fin slider*/
+
+/*Inicia mapa*/
+
+.mapa{
+    width: 100%;
+    height: 100% ;
+    margin: auto;
+    font-family: 'century gothic';
+    
+}
+.mapa h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+  #map {
+    height: 500px;
+    width: 900px;
+    margin: auto;
+}
+
+
+/*Termina mapa*/
+
+/*Inicia footer*/
+
+.contaniner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer{
+    margin: 30px auto;
+    background-color: #87a5ff;
+    padding: 80px 0;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 30%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.footer-links h4{
+    font-size: 30px;
+    color: #FFFF;
+    margin-bottom: 25px;
+    font-weight: 500px;
+    border-bottom: 3px solid #ff0000;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.footer-links ul li {
+    font-size: 20px;
+    color: #FFF;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+
+}
+.footer-links ul li:hover {
+    padding-left: 10px;
+    color: #FFF;
+
+}
+
+
+.social-links a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFF;
+    transition: all .5s ease;
+    align-items: center;
+
+}
+
+
+.social-links a:hover{
+    background-color: #507cfd;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+label{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+input , textarea{
+    padding: 17px 14px;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+    background-color: #f0ebd7;
+    
+}
+
+:focus{
+    outline: 1px solid #ff0000;
+}
+
+.btn1{
+    background-color: #1E92E9;
+    cursor: pointer;
+
+}
+
+
+
+
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+.galeria{
+    font-family: 'open sans';
+    margin: 0 0 0 20px;
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #ff0000;
+    margin-bottom: 40px;
+}
+
+.contenedor-btn{
+    overflow: hidden;
+    display: flex;
+    margin: 0 0 0 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #0000;
+    
+}
+.btn{
+    
+    position: relative;
+    margin: 0 0 0 10px;
+    color: #0000;
+    
+}
+
+.btn #toggleButton{
+    
+    top: 20px; 
+    left: 20px; 
+    width: 150%;
+    height: 60px;
+    
+    
+    border: 3px solid #87a5ff;
+    letter-spacing: 5px;
+    
+    color: #000;
+    
+}
+
+.btn #toggleButton::before{
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 200%;
+    left: 0;
+    top: -200%;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    color: #000;
+    
+}
+.btn #toggleButton:hover{
+    color: #000;
+   
+}
+
+.btn #toggleButton:hover::before{
+    color: #000;
+    top: 0;
+    border-radius: 0%;
+    
+}
+
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: 20px auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 118, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}

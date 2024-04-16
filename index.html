@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEFEMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <header>
+     <div class="logo">
+        <img src="imagenes/Logo Principal.png" alt="">
+        <p>HEFEMA</p>
+    </div>
+     <div class="bars">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#Contacto">CONTACTO</a></li>
+                <li><a href="#galeria">PRODUCTO</a></li>
+                <li><a href="">INFORMACION</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+    <!-- -----------------------------------------Inicio Slider---------------------------------------- -->
+<br><br><br><br>
+    <div id="inicio" class="gift" style="background-image: url(imagenes/Idea\ Presentacion\ pagina\ web\ HERRAJES.gif);"></div>
+    <div id="informacion" class="title-cards">
+		<h2>HERRAJES FERROVIARIOS Y MATERIALES</h2>
+	</div>
+<!--Slider-->
+<div class="slider">
+    <h1>IMAGENES</h1>
+    <div class="linea"></div>
+    <div class="slider-inner">
+        <div class="slide">
+            <img src="imagenes/carrusel1.jpg" alt="">
+       
+        </div>
+        <div class="slide">
+            <img src="imagenes/carrusel2.jpg" alt="">
+            
+        </div>
+        <div class="slide">
+            <img src="imagenes/carrusel3.jpg" alt="">
+            
+        </div>
+        <div class="slide">
+            <img src="imagenes/carrusel4.jpg" alt="">
+            
+        </div>
+        <div class="slide">
+            <img src="imagenes/carrusel5.jpg" alt="">
+            
+        </div>
+        <div class="slide">
+            <img src="imagenes/carrusel6.jpg" alt="">
+            
+        </div>
+    </div>
+</div>
+<script src="texto.js"></script>
+
+
+
+
+<!--Inicio Cartas-->
+
+
+<h1 style="text-align: center; margin: 10px 0;  ">PRESENTACION</h1>
+<div class="linea"></div> 
+<div class="cartas">
+    <div class="container-card2">
+        <div class="card2">
+            <figure>
+                <img src="imagenes/imagen6.jpg" alt="" >
+            </figure>
+            <div class="contenido-card2">
+                <h3>¿QUIENES SOMOS?</h3>
+                <p>Somos una empresa del ramo industrial, fundada en 1999 y ubicada en el Estado de México.
+            Nuestro giro principal es la fabricación de materiales de patente libre y comercialización de Material Ferroviario.
+            También hemos participado en trabajos de Construcción y Mantenimiento de Vía, en la fabricación de piezas especiales para vía minera y la comercialización de partes para carro de ferrocarril.
+            Nuestro objetivo como empresa es ofrecer productos de calidad a través de una constante capacitación del personal, una eficiente distribución de insumos y la implementación de la infraestructura requerida para optimizar tiempo y recursos.</p>
+                
+            </div>
+        </div>
+    
+    
+    </div>
+
+    <div class="separador-vertical"></div> 
+
+<div class="container-card">
+        
+    <div id="carta" class="card">
+        <figure>
+            <img src="imagenes/imagen7.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>MISION</h3>
+            <p>Ofrecer el mejor servicio en el
+                ramo ferroviario a través de la
+                integración de servicios: Desde la fabricación de los
+                materiales
+                Hasta su instalación,
+                supervisión y mantenimiento.
+                Mediante una constante
+                capacitación del personal, una
+                eficiente distribución de los
+                insumos y la implementación de
+                infraestructura requerida para
+                lograr trabajos de calidad en el
+                mejor tiempo de ejecución y
+                ofreciendo la mejor propuesta
+                económica a nuestros clientes.</p>
+            
+        </div>
+    </div>
+    <div class="separador-horizontal"></div>
+    <div id="carta1" class="card">
+        <figure>
+            <img src="imagenes/carrusel2.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>VISION </h3>
+            <p> En Herrajes Ferroviarios y
+                Materiales estamos convencidos de
+                que el trabajo constante, la implementación de nuevas
+                tecnologías, procedimientos de
+                seguridad personal en el trabajo y
+                el respeto al medio ambiente, nos
+                llevarán a lograr mejores resultados
+                en todos los aspectos de la vida de
+                la empresa y del personal que
+                formamos parte de ella. Y que,
+                insertados en un mundo
+                globalizado, estamos aportando
+                nuestro grano de arena para dejar
+                un mundo mejor a las futuras
+                generaciones.</p>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--Fin   Tarjetas-->
+
+
+    <!--Fin slider-->
+
+
+<div id="galeria" class="galeria">
+    <h1>PRODUCTOS</h1>
+    <div class="linea"></div>
+    <div class="contenedor-btn">
+        <div  class="btn"><button id="toggleButton" onclick="toggleImagenes()">PRODUCTOS 1</button></div>
+        <div  class="btn"><button id="toggleButton" onclick="toggleImagenes()">PRODUCTOS 2</button></div>
+        <div  class="btn"><button id="toggleButton" onclick="toggleImagenes()">PRODUCTOS 3</button></div>
+    </div>
+    <div class="contenedor-imagenes">
+        <div class="imagen">
+            <img src="imagenes/galeria1.jpg" alt="">
+            <div class="overlay">
+                <h2>SAPO AUTOREULADOR No.8 de 115 LB/YD</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria2.png" alt="">
+            <div class="overlay">
+                <h2>SAPO TIPO INDUSTRIAL No.8 DE 115 LB/YD</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria3.jpg" alt="">
+            <div class="overlay">
+                <h2>SAPO CON INSERTO AM NO.8 DE 115 LB/YD</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria4.jpg" alt="">
+            <div class="overlay">
+                <h2>AGUJAS DE 16'6" x 115 LB CON INSERTO AM</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria5.jpg" alt="">
+            <div class="overlay">
+                <h2>OREJAS PARA AGUJA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria6.png" alt="">
+            <div class="overlay">
+                <h2>PUNTA DE AGUJA TIPO SAMSON CON RIEL DE APOYO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria7.jpg" alt="">
+            <div class="overlay">
+                <h2>PUNTA DE AGUJA DE 115 LB CON INSERTO AM</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria8.jpg" alt="">
+            <div class="overlay">
+                <h2>CONTRARIELES DE 13' x 115 LB SIN EMPAQUES NI TORNILLOS</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria9.jpg" alt="">
+            <div class="overlay">
+                <h2>CONTRARIELES DE 13' x 115 LB COMPLETOS ARMADOS</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria10.jpg" alt="">
+            <div class="overlay">
+                <h2>CONTRARIELES DE 13' x 115 LB ARAMADO</h2>
+            </div>
+        </div>
+        <!--Primeras diez imagenes-->
+        <div class="imagen">
+            <img src="imagenes/galeria11.jpg" alt="">
+            <div class="overlay">
+                <h2>GUARDAS AGUJAS EN PROCESO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria12.jpg" alt="">
+            <div class="overlay">
+                <h2>GUARDA AGUJAS DE 1.00 M ARMADOS</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria13.jpg" alt="">
+            <div class="overlay">
+                <h2>PROTECTOR DE AGUJAS TIPO CONTRARIEL</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria14.jpg" alt="">
+            <div class="overlay">
+                <h2>PROTECTOR DE AGUJAS TIPO CONTRARIEL</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria15.jpg" alt="">
+            <div class="overlay">
+                <h2>PROTECTOR DE PUNTA DE AGUJAS TIPO PASTILLA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria16.jpg" alt="">
+            <div class="overlay">
+                <h2>BLOCK TALON DE AGUJA DE 115 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria17.jpg" alt="">
+            <div class="overlay">
+                <h2>PERNO DE HOMBRO PARA BLOCK TALÓN DE AGUJA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria18.jpg" alt="">
+            <div class="overlay">
+                <h2>ARBOL DE CAMBIO BAJO 22E</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria19.jpg" alt="">
+            <div class="overlay">
+                <h2>BANDERAS PARA ÁRBOL DE CAMBIO ALTO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria20.jpg" alt="">
+            <div class="overlay">
+                <h2>CUERPO DE ARBOL DE CAMBIO 56-B SEMIAUTOMATICO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria21.jpg" alt="">
+            <div class="overlay">
+                <h2>CUERPO DEL ÁRBOL DE CAMBIO ESQUELÉTICO 112-D</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria22.jpg" alt="">
+            <div class="overlay">
+                <h2>ÁRBOL DE CAMBIO TIPO P PARA PAVIMENTO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria23.jpg" alt="">
+            <div class="overlay">
+                <h2>HORQUILLA Y PERNO DE OJO PARA ÁRBOL DE CAMBIO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria24.jpg" alt="">
+            <div class="overlay">
+                <h2>PLACAS CORREDERAS Y GEMELAS PARA HERRAJES DE CAMBIO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria25.jpg" alt="">
+            <div class="overlay">
+                <h2>PLACAS PARA CONTRARIEL</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria26.jpg" alt="">
+            <div class="overlay">
+                <h2>PLACA ESCANTILLÓN 1-G</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria27.jpg" alt="">
+            <div class="overlay">
+                <h2>VARILLAS DE CONEXIÓN NO.1 Y 2 DE 1/4"</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria28.jpg" alt="">
+            <div class="overlay">
+                <h2>SILLETAS RÍGIDAS DE 115 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria29.jpg" alt="">
+            <div class="overlay">
+                <h2>DESCARRILADOR REVERSIBLE TIPO MAROMA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria30.jpg" alt="">
+            <div class="overlay">
+                <h2>PLACA U PARA AGUJA DESCARRILADORA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria31.jpg" alt="">
+            <div class="overlay">
+                <h2>TOPE DE FIN DE VÍA BUMPING POST</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria32.jpg" alt="">
+            <div class="overlay">
+                <h2>TOPE DE FÍN DE VÍA DE MEDIA RUEDA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria33.jpg" alt="">
+            <div class="overlay">
+                <h2>TOPE PARA CARRO CLAMPING CHOCK</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria34.jpg" alt="">
+            <div class="overlay">
+                <h2>PLANCHUELA DE CORDÓN DE 36" x 115 LB RE</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria35.jpg" alt="">
+            <div class="overlay">
+                <h2>PLANCHUELA DE COMPROMISO DE 115 A 85 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria36.jpg" alt="">
+            <div class="overlay">
+                <h2>PLANCHUELAS AISLADAS PARA RIEL DE 115 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria37.jpg" alt="">
+            <div class="overlay">
+                <h2>KIT DE INSTALACIÓN PARA PLANCHUELAS AISLADAS</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria38.jpg" alt="">
+            <div class="overlay">
+                <h2>PLANCHUELAS DE JOROBA PARA RIEL DE 115 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria39.jpg" alt="">
+            <div class="overlay">
+                <h2>ABRAZADERA TEMPORAL PARA MANTENIMIENTO 115</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria40.jpg" alt="">
+            <div class="overlay">
+                <h2>TORNILLOS DE VIA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria41.jpg" alt="">
+            <div class="overlay">
+                <h2>TIRAFONDO JAB 173mm</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria42.jpg" alt="">
+            <div class="overlay">
+                <h2>PLANCHUELAS ESPECIALES PARA DIFERENTES MEDIDAS DE RIEL</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria43.jpg" alt="">
+            <div class="overlay">
+                <h2>VARILLAS TENSORAS DE ESCANTILLON TIPO J DE 1 1/4"</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria44.jpg" alt="">
+            <div class="overlay">
+                <h2>CRUCERO DE VIA DE RIEL ARMADO DE 62° PARA RIEL DE 115 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria45.jpg" alt="">
+            <div class="overlay">
+                <h2>CRUCERO DE 25° CON INSERTOS DE ACERO MANGANESO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria46.jpg" alt="">
+            <div class="overlay">
+                <h2>RIELES FERROVIARIOS DE 115 LB/yD SECCION RE</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria47.jpg" alt="">
+            <div class="overlay">
+                <h2>CLAVO DE VIA DE 5/8" x 6"</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria48.jpg" alt="">
+            <div class="overlay">
+                <h2>PERNO SL GALVANIZADO PARA FIJACIONES EN DURMIENTE DE CONCRETO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria49.jpg" alt="">
+            <div class="overlay">
+                <h2>GRAPA NO.7 PARA FIJACIONES RNY</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria50.jpg" alt="">
+            <div class="overlay">
+                <h2>CLIP ELÁSTICO "e" PARA FIJACION TIPO PANDROL</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria51.jpg" alt="">
+            <div class="overlay">
+                <h2>PLACA ROLADA PARA DURMIENTE DE MADERA CON FIJACIÓN ELÁSTICA TIPO PANDROL</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria52.jpg" alt="">
+            <div class="overlay">
+                <h2>CLIP NO.62 ATORNILLABLE PARA RIEL DE 115 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria53.jpg" alt="">
+            <div class="overlay">
+                <h2>TOPE DE PLÁSTICO (TACÓN) PARA FIJACIÓN ES</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria54.jpg" alt="">
+            <div class="overlay">
+                <h2>TOPE PLÁSTICO (TACÓN) PARA FIJACIÓN GN</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria55.jpg" alt="">
+            <div class="overlay">
+                <h2>TAQUETE PARA CONCRETO TIPO ARPON DE 3/4"x7"</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria56.jpg" alt="">
+            <div class="overlay">
+                <h2>ANCLA TIPO WOODING PARA EL RIEL DE 115 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria57.jpg" alt="">
+            <div class="overlay">
+                <h2>ANCLA TIPO "J" PARA RIEL DE 115 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria58.jpg" alt="">
+            <div class="overlay">
+                <h2>PLACA DE ASIENTO DE 14" PARA EL RIEL DE 115 LB</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria59.jpg" alt="">
+            <div class="overlay">
+                <h2>ARMÓN DE VÍA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria60.jpg" alt="">
+            <div class="overlay">
+                <h2>DURMIENTE DE CONCRETO I-84</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria61.jpg" alt="">
+            <div class="overlay">
+                <h2>BIELDO DE 10 DIENTES PARA BALASTO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria62.jpg" alt="">
+            <div class="overlay">
+                <h2>IZADORA DE RIEL (PERROS) DE CADENA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria63.jpg" alt="">
+            <div class="overlay">
+                <h2>ESCANTILLÓN DE VÍA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria64.jpg" alt="">
+            <div class="overlay">
+                <h2>TROLLEY PARA ARRASTRE DE RIELES</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria65.jpg" alt="">
+            <div class="overlay">
+                <h2>CRUCERO A NIVEL DEL RIEL ARMADO 10°</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria66.jpg" alt="">
+            <div class="overlay">
+                <h2>SEÑALIZACIÓN DE FIN DE VÍA</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria67.jpg" alt="">
+            <div class="overlay">
+                <h2>CLAVO DE VÍA DE 5/8" x 6"</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria68.jpg" alt="">
+            <div class="overlay">
+                <h2>PLANCHUELA DE COMPROMISO DE 100 A 115 LB/YD</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria69.jpg" alt="">
+            <div class="overlay">
+                <h2>GRAPA RN Y REFUERZO PARA DURMIENTE I-84</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria70.jpg" alt="">
+            <div class="overlay">
+                <h2>BARRAS DE CONEXIÓN ÁRBOL ALTO Y BAJO</h2>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="imagenes/galeria71.jpg" alt="">
+            <div class="overlay">
+                <h2>TALADRO HIDRÁULICO PARA RIEL</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="galeria.js"></script>
+
+<div class="mapa">
+    <h1>UBICACIÓN</h1>
+    <div class="linea"></div>
+    <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="mapa.js"></script>
+
+
+
+<footer id="Contacto" class="footer">
+    <div class="conteiner">
+        <div class="footer-row">
+
+            <div class="footer-links">
+                <h4>CONTACTO</h4>
+                <ul>
+                    <li>Dirección: CC TERRACERIA P17, LT 2 Z 1P1 1, COL. OJO DE AGUA, TECAMAC, EDO. DE MÉXICO. C.P. 55770</li>
+                    <li>Telefono: 55 6234 6183 y 55 5787 9501. </li>
+                    <li>Correo electronico: ventas@hefema.com.mx</li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>REDES SOCIALES</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/hefema99/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://maps.app.goo.gl/ZDfqskfEcKromXYz7"><i class="fa-solid fa-map-location-dot"></i></a>
+
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>ENVIANOS UN MENSAJE</h4>
+                <div class="social-links">
+                    <div class="form-content">
+                        <form>
+                            <label for="nombre"><b>NOMBRE</b></label>
+                            <input type="text" name="Nombre" id="nombre">
+
+                            <label for="email"><b>CORREO</b></label>
+                            <input type="text" name="Correo" id="email">
+
+                            <label for="telefono"><b>TELEFONO</b></label>
+                            <input type="text" name="Telefono" id="telefono">
+
+                            <label for="mensaje"><b>MENSAJE</b></label>
+                            <textarea name="Asunto" id="mensaje" cols="30" rows="5"></textarea>
+
+                            <input class="btn1" type="submit" value="ENVIAR">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
